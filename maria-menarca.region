@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maria Menarca - Em Breve</title>
+  <title>Maria Menarquinha</title>
   {squarespace-headers}
 </head>
 <body class="hotsite-body">
@@ -11,7 +11,10 @@
   <section class="hotsite-hero">
     <div class="hotsite-hero-content">
       <span class="hotsite-badge">Em Breve</span>
-      <h1 class="hotsite-title">Maria <span>Menarca</span></h1>
+      <div class="hotsite-hero-image-wrapper">
+        <img src="/assets/menarquinha.jpg" alt="Ilustração Maria Menarquinha" class="hotsite-hero-img" />
+      </div>
+      <h1 class="hotsite-title">Maria <span>Menarquinha</span></h1>
       <p class="hotsite-subtitle">
         Uma nova jornada sobre corpo, ciclo menstrual, autonomia e educação. Fique por dentro do lançamento oficial.
       </p>
