@@ -1,0 +1,207 @@
+/* ==========================================================================
+   HOTSITES - GIRL UP BRASIL INSPIRED STYLE
+   Páginas: Almanaque & Maria Menarca
+   ========================================================================== */
+
+/* Variáveis de Cores e Fontes */
+:root {
+  --gu-primary: #e60067;      /* Magenta / Rosa Choque */
+  --gu-secondary: #2b0038;    /* Roxo Escuro */
+  --gu-accent: #ffb800;       /* Amarelo de Destaque */
+  --gu-light: #f9f6fb;        /* Fundo Claro / Off-White */
+  --gu-dark: #120019;         /* Texto Escuro */
+  --gu-white: #ffffff;
+  --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+}
+
+/* Reset básico e Base */
+body.hotsite-body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--gu-secondary);
+  color: var(--gu-white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container Responsivo */
+.hotsite-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   HERO SECTION (Banner Principal)
+   ========================================================================== */
+.hotsite-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, var(--gu-secondary) 0%, #4a005c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hotsite-hero::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: var(--gu-primary);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.hotsite-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+}
+
+/* Badge "Em Breve" */
+.hotsite-badge {
+  display: inline-block;
+  background-color: var(--gu-accent);
+  color: var(--gu-dark);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+/* Títulos */
+.hotsite-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+  letter-spacing: -1px;
+  color: var(--gu-white);
+}
+
+.hotsite-title span {
+  color: var(--gu-primary);
+  display: block;
+}
+
+.hotsite-subtitle {
+  font-size: 1.25rem;
+  color: #e0d0e8;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================================================
+   FORMULÁRIO DE CAPTURA / NEWSLETTER
+   ========================================================================== */
+.hotsite-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .hotsite-form {
+    flex-direction: row;
+  }
+}
+
+.hotsite-input {
+  flex: 1;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.hotsite-input:focus {
+  border-color: var(--gu-accent);
+  box-shadow: 0 0 0 3px rgba(255, 184, 0, 0.3);
+}
+
+.hotsite-btn {
+  background-color: var(--gu-primary);
+  color: var(--gu-white);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.hotsite-btn:hover {
+  background-color: #ff0073;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SEÇÃO DE DESTAQUE / SOBRE
+   ========================================================================== */
+.hotsite-features {
+  padding: 80px 20px;
+  background-color: var(--gu-white);
+  color: var(--gu-dark);
+}
+
+.hotsite-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .hotsite-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hotsite-card {
+  background: var(--gu-light);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 5px solid var(--gu-primary);
+}
+
+.hotsite-card h3 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  margin-top: 0;
+  color: var(--gu-secondary);
+}
+
+/* Rodapé Simplificado */
+.hotsite-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: var(--gu-dark);
+  font-size: 0.9rem;
+  color: #a090a8;
+}
